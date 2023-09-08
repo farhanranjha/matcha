@@ -38,11 +38,11 @@ export default function Carousel() {
             },
             768: {
               slidesPerView: 4,
-              spaceBetween: 40,
+              spaceBetween: 0,
             },
             1024: {
               slidesPerView: 5,
-              spaceBetween: 50,
+              spaceBetween: 0,
             },
           }}
           spaceBetween={50}

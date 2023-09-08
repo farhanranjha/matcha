@@ -3,10 +3,10 @@ import Button from "./Button";
 export default function Header() {
   return (
     <>
-      <header className="bg-opaque-white flex items-center rounded-b-3xl p-2 md:p-4 md:h-16 2xl:h-24 sm:h-14 h-12">
-        <div className="w-full flex flex-row justify-between">
+      <header className="bg-opaque-white flex items-center rounded-b-3xl p-2 md:p-4 md:h-16 2xl:h-24 xs:h-10 ">
+        <div className="w-full flex flex-row justify-between max-w-[1440px] m-auto">
           <div>
-            <h3 className="font-Gelica md:text-4xl sm:text-2xl text-2xl">
+            <h3 className="font-Gelica md:text-4xl sm:text-2xl text-lg xs:ml-4">
               matcha
             </h3>
           </div>

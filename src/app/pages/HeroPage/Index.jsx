@@ -9,9 +9,11 @@ export default function HeroPage() {
   return (
     <>
       <Header />
-      <TopSection />
-      <AboutUs />
-      <SuccessStories />
+      <div className="max-w-[1440px] m-auto">
+        <TopSection />
+        <AboutUs />
+        <SuccessStories />
+      </div>
       <Footer />
     </>
   );

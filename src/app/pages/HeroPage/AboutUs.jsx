@@ -7,12 +7,12 @@ import portfolio1 from "public/assets/portfolio1.png";
 
 export default function AboutUs() {
   return (
-    <section className="sm:mt-20 md:mt-28">
-      <h1 className="font-Gelica md:text-5xl sm:text-3xl font-extralight text-center">
+    <section className="sm:mt-20 md:mt-28 mt-10">
+      <h1 className="font-Gelica md:text-5xl sm:text-3xl font-extralight text-center text-2xl">
         About Us
       </h1>
       <PortfolioParagraph
-        styling="flex-row"
+        styling=" md:flex-row flex-col flex-wrap sm:flex-row"
         heading="Take the therapy quiz"
         imgSrc={portfolio1.src}
         btnText="Quiz Time!"
@@ -23,7 +23,7 @@ export default function AboutUs() {
               free therapy session at the end!"
       />
       <PortfolioParagraph
-        styling="flex-row-reverse"
+        styling="md:flex-row-reverse xs:flex-col flex-wrap sm:flex-row-reverse"
         heading="Let’s talk about it"
         imgSrc={portfolio2.src}
         btnText="Get The App"
