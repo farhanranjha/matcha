@@ -6,7 +6,7 @@ export default function Card(props) {
   const name = props.name;
   return (
     <>
-      <div className="card-container">
+      <div className="rounded-lg relative h-[285px] w-[225px] m-auto text-[11px] card-container">
         <img className="w-full h-full" src={img.src} alt="card" />
         <div className="absolute bottom-2 transparent-div p-3 pt-1">
           <div className="flex flex-row justify-center">

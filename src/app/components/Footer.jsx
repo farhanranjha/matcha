@@ -3,7 +3,7 @@ import socials from "public/assets/socials.png";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-white p-4 rounded-t-3xl md:h-28 mt-20">
+      <footer className="bg-white p-4 rounded-t-3xl md:h-28 mt-20 sm:h-24 sm:px-10">
         <div className="flex flex-row relative">
           <div className="flex flex-row absolute left-2 top-2">
             <button className="font-Khula text-[11px] mr-8">

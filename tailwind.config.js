@@ -14,6 +14,9 @@ module.exports = {
         'Gelica': ['Gelica', 'sans-serif'],
         'Montserrat':['Montserrat', 'sans-serif'],
       },
+      screens: {
+      'xs': '375px',
+    },
       colors: {
         ...colors,
         transparent: 'transparent',

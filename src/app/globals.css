@@ -83,8 +83,15 @@ body {
   background: radial-gradient(circle, rgba(240,233,244,1) 11%, rgba(201,226,244,1) 59%, rgba(247,204,227,1) 100%);
 }
 
-.custom-shadow{
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+@media (min-width: 720px){
+  .custom-shadow{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  }
+}
+@media (min-width: 640px){
+  .custom-shadow{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
+  }
 }
 
 
@@ -101,16 +108,27 @@ body {
 
 /* .active-slide .card-container */
 
-.card-container{
-  @apply  rounded-lg relative h-[285px] w-[225px] m-auto text-[11px]
+.swiper-slide{
+  transform: scale(0.5);
+  opacity: 0.6;
+  z-index: 0;
 }
 
-/* .swiper-slide-active .card-container{
-  @apply  rounded-lg relative h-[387px] w-[305px] m-auto text-[15px]
+.swiper-slide-active{
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+  left: unset;
 }
-.swiper-slide-next .card-container{
-  @apply  rounded-lg relative h-[340px] w-[255px] m-auto text-[13px]
+.swiper-slide-next{
+  transform: scale(0.7);
+  opacity: 0.8;
+  z-index: 1;
+  left: unset;
 }
-.swiper-slide-prev .card-container{
-  @apply  rounded-lg relative h-[340px] w-[255px] m-auto text-[13px]
-} */
+.swiper-slide-prev{
+  transform: scale(0.7);
+  opacity: 0.8;
+  z-index: 1;
+  left: unset;
+}

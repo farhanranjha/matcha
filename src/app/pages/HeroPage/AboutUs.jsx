@@ -7,8 +7,8 @@ import portfolio1 from "public/assets/portfolio1.png";
 
 export default function AboutUs() {
   return (
-    <section className=" mt-28">
-      <h1 className="font-Gelica text-5xl font-extralight text-center">
+    <section className="sm:mt-20 md:mt-28">
+      <h1 className="font-Gelica md:text-5xl sm:text-3xl font-extralight text-center">
         About Us
       </h1>
       <PortfolioParagraph

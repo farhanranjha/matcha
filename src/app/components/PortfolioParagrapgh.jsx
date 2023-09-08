@@ -10,14 +10,20 @@ export default function PortfolioParagraph(props) {
     <>
       <div className={styling}>
         <div className="w-1/3">
-          <h2 className="text-4xl p-5 pl-0">{heading}</h2>
-          <p>{innerText}</p>
+          <h2 className="md:text-4xl md:p-5 md:pl-0 sm:text-[1.4rem]">
+            {heading}
+          </h2>
+          <p className="sm:text-sm sm:p-2 sm:pl-0">{innerText}</p>
           <Button
             innerText={btnText}
-            styling="w-44 mr-7 p-2 font-Montserrat font-bold text-white bg-light-purple border-purple border rounded-xl text-xs mt-4 shadow-lg hover:bg-purple"
+            styling="md:w-44 mr-7 p-2 font-Montserrat font-bold text-white bg-light-purple border-purple border rounded-xl text-xs mt-4 shadow-lg hover:bg-purple sm:w-32"
           />
         </div>
-        <img className="w-96 rounded-2xl" src={imgSrc} alt="portfolio-img" />
+        <img
+          className="md:w-96 md:rounded-2xl sm:w-72 sm:rounded-xl"
+          src={imgSrc}
+          alt="portfolio-img"
+        />
       </div>
     </>
   );

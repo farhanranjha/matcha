@@ -1,7 +1,13 @@
 "use client";
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Keyboard,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
 import cardPicture from "public/assets/cardPicture.png";
 
 import Card from "./Card";
@@ -19,13 +25,34 @@ export default function Carousel() {
     <>
       <div className=" m-auto mt-10 p-10">
         <Swiper
-          initialSlide={1}
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          //slidesPerView={5}
+          breakpoints={{
+            // when window width is >= 640px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
           spaceBetween={50}
-          slidesPerView={5}
           centeredSlides={true}
-          loop={"infinite"}
-          navigation
+          //loop={true}
+          navigation={true}
+          keyboard={{
+            enabled: true,
+          }}
+          modules={[Keyboard, Navigation, Pagination, Scrollbar, A11y]}
         >
           <SwiperSlide>
             <Card
@@ -59,20 +86,6 @@ export default function Carousel() {
             <Card
               img={cardPicture}
               name="E"
-              review="I was tired of searching WebMD and other sites. I wanted to find honest sources and thoughts as to what I was going through. "
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              img={cardPicture}
-              name="F"
-              review="I was tired of searching WebMD and other sites. I wanted to find honest sources and thoughts as to what I was going through. "
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              img={cardPicture}
-              name="G"
               review="I was tired of searching WebMD and other sites. I wanted to find honest sources and thoughts as to what I was going through. "
             />
           </SwiperSlide>
