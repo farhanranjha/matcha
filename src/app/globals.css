@@ -82,3 +82,35 @@ body {
   background: rgb(240,233,244);
   background: radial-gradient(circle, rgba(240,233,244,1) 11%, rgba(201,226,244,1) 59%, rgba(247,204,227,1) 100%);
 }
+
+.custom-shadow{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+
+
+.transparent-div{
+  width: 95%;
+  height: 40%; 
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 16px;
+  border: 0.83px solid var(--Primary, #545ADE);
+  background: rgba(84, 90, 222, 0.40);
+  backdrop-filter: blur(14.10446834564209px); 
+}
+
+/* .active-slide .card-container */
+
+.card-container{
+  @apply  rounded-lg relative h-[285px] w-[225px] m-auto text-[11px]
+}
+
+/* .swiper-slide-active .card-container{
+  @apply  rounded-lg relative h-[387px] w-[305px] m-auto text-[15px]
+}
+.swiper-slide-next .card-container{
+  @apply  rounded-lg relative h-[340px] w-[255px] m-auto text-[13px]
+}
+.swiper-slide-prev .card-container{
+  @apply  rounded-lg relative h-[340px] w-[255px] m-auto text-[13px]
+} */
